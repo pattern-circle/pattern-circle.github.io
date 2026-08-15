@@ -232,6 +232,143 @@ h1 {
     display: block;
 }
 
+/* ── Handover section ───────────────────────────────────── */
+.handover-section {
+    margin-top: clamp(52px, 8vw, 110px);
+}
+
+.handover-card {
+    background: #163f37;
+    border-radius: clamp(18px, 2vw, 32px);
+    overflow: hidden;
+    padding: clamp(36px, 4vw, 72px) clamp(28px, 4.5vw, 80px);
+}
+
+.handover-left {
+    padding-right: clamp(20px, 4vw, 64px);
+    padding-bottom: 0;
+}
+
+.handover-title {
+    font-family: "Google Sans Flex", sans-serif;
+    font-size: clamp(36px, 4.5vw, 84px);
+    font-weight: 800;
+    color: #fff;
+    line-height: 1;
+    letter-spacing: -0.04em;
+    margin: 0 0 clamp(14px, 1.6vw, 28px);
+}
+
+.handover-desc {
+    color: rgba(255,255,255,0.68);
+    font-size: clamp(16px, 1.1vw, 20px);
+    line-height: 1.55;
+    margin: 0 0 clamp(18px, 2vw, 32px);
+}
+
+.handover-ooh {
+    font-size: clamp(16px, 1.05vw, 23px);
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.handover-ooh a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.handover-ooh a:hover {
+    text-decoration: underline;
+}
+
+.handover-right {
+    padding-left: clamp(20px, 4vw, 64px);
+}
+
+.handover-progress {
+    margin-bottom: clamp(16px, 1.8vw, 30px);
+}
+
+.handover-progress-bar {
+    position: relative;
+    height: 2px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 99px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+.handover-progress-fill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background: var(--accent);
+    border-radius: 99px;
+}
+
+.handover-step-label {
+    color: rgba(255,255,255,0.5);
+    font-size: clamp(11px, 0.85vw, 14px);
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    margin: 0;
+}
+
+.handover-input {
+    background: #f8f5ef;
+    border: 1.5px solid transparent;
+    border-radius: 999px;
+    padding: clamp(13px, 1.2vw, 18px) clamp(18px, 1.6vw, 26px);
+    font-size: clamp(14px, 1.05vw, 18px);
+    color: #2a4a44;
+    box-shadow: none;
+    transition: border-color 0.18s;
+}
+
+.handover-input::placeholder {
+    color: #97aba7;
+}
+
+.handover-input:focus {
+    background: #fff;
+    border-color: var(--accent);
+    box-shadow: none;
+    outline: none;
+}
+
+.handover-submit {
+    background: #fd5a27;
+    color: rgba(255,255,255,0.75);
+    border-radius: 999px;
+    font-size: clamp(15px, 1.1vw, 19px);
+    font-weight: 600;
+    padding: clamp(14px, 1.3vw, 20px);
+    border: none;
+    letter-spacing: 0.01em;
+    transition: background 0.18s, color 0.18s;
+}
+
+.handover-submit:active,
+.handover-submit:hover,
+.handover-submit:focus {
+    background: #fd5a27!important;
+    color: #fff!important;
+}
+
+@media (max-width: 991.98px) {
+    .handover-left {
+        padding-right: 0;
+        padding-bottom: clamp(28px, 5vw, 48px);
+    }
+
+    .handover-right {
+        padding-left: 0;
+    }
+}
+
+/* ── Footer ─────────────────────────────────────────────── */
 .site-footer {
     margin-top: clamp(52px, 8vw, 120px);
     padding-bottom: clamp(20px, 4vw, 54px);
