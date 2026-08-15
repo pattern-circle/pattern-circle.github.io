@@ -490,18 +490,29 @@ h1 {
         padding-right: 20px;
     }
 
+    /* Grid replaces flex-wrap ordering — brand+CTA always share row 1,
+       navbar toggler always sits in row 2 */
     .site-header {
-        align-items: flex-start;
-        flex-wrap: wrap;
+        display: grid !important;
+        grid-template-columns: 1fr auto;
+        grid-template-areas:
+            "brand cta"
+            "nav   nav";
+        align-items: center;
+        gap: 8px 12px;
+        min-height: unset;
     }
 
     .brand {
+        grid-area: brand;
         font-size: 21px;
+        align-self: center;
     }
 
     .site-navbar {
+        grid-area: nav;
         width: 100%;
-        order: 3;
+        order: unset;
     }
 
     .site-navbar .navbar-collapse {
@@ -518,9 +529,12 @@ h1 {
     }
 
     .cta-btn {
-        margin-left: auto;
-        font-size: 16px;
-        padding: 12px 20px;
+        grid-area: cta;
+        margin-left: 0;
+        align-self: center;
+        font-size: 15px;
+        padding: 10px 18px;
+        white-space: nowrap;
     }
 
     .hero-section {
