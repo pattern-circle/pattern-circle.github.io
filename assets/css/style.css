@@ -496,7 +496,7 @@ h1 {
     }
 
     .brand {
-        font-size: 30px;
+        font-size: 24px;
     }
 
     .site-navbar {
@@ -532,7 +532,7 @@ h1 {
     }
 
     .status-pill {
-        font-size: 14px;
+        font-size: 12px;
         padding: 10px 14px;
         gap: 9px;
     }
