@@ -83,6 +83,50 @@
 
     </main>
 
+    <!-- Handover / Referral form section -->
+    <section class="handover-section" id="refer" aria-labelledby="handover-heading">
+      <div class="handover-card row g-0">
+
+        <div class="handover-left col-12 col-lg-5 d-flex flex-column justify-content-center">
+          <h2 class="handover-title" id="handover-heading">The handover</h2>
+          <p class="handover-desc">
+            Two short steps. A placement officer replies within four working hours, and same-day for emergency requests.
+          </p>
+          <p class="handover-ooh mb-0">
+            Out of hours: <a href="tel:02089460000">020 8946 0000</a>
+          </p>
+        </div>
+
+        <div class="handover-right col-12 col-lg-7">
+          <div class="handover-progress" aria-label="Step 1 of 2">
+            <div class="handover-progress-bar">
+              <span class="handover-progress-fill"></span>
+            </div>
+            <p class="handover-step-label">STEP 1 OF 2 &mdash; ABOUT YOU</p>
+          </div>
+
+          <form class="handover-form" novalidate>
+            <div class="mb-3">
+              <input type="text" class="handover-input form-control" placeholder="Your full name" autocomplete="name" required />
+            </div>
+            <div class="mb-3">
+              <input type="text" class="handover-input form-control" placeholder="Local authority or organisation" autocomplete="organization" required />
+            </div>
+            <div class="mb-3">
+              <input type="email" class="handover-input form-control" placeholder="Work email" autocomplete="email" required />
+            </div>
+            <div class="mb-4">
+              <input type="tel" class="handover-input form-control" placeholder="Phone (optional)" autocomplete="tel" />
+            </div>
+            <button type="submit" class="handover-submit btn w-100">
+              Continue <span aria-hidden="true">&rarr;</span>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
     <footer class="site-footer">
       <hr class="footer-divider" />
 
