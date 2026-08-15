@@ -29,17 +29,17 @@
             <li class="nav-item"><a class="nav-link px-0 fs-5" href="#">Homes</a></li>
             <li class="nav-item"><a class="nav-link px-0 fs-5" href="#">Support</a></li>
             <li class="nav-item"><a class="nav-link px-0 fs-5" href="#">Outcomes</a></li>
-            <li class="nav-item"><a class="nav-link px-0 fs-5" href="#">Refer</a></li>
+            <li class="nav-item"><a class="nav-link px-0 fs-5" href="#refer">Refer</a></li>
           </ul>
         </div>
       </nav>
 
-      <button class="cta-btn btn rounded-pill border-0" type="button">Quick Referral</button>
+      <a href="#refer" class="cta-btn btn rounded-pill border-0">Quick Referral</a>
     </header>
 
     <main class="hero-section row g-4 g-xl-5 align-items-start">
 
-      <section class="hero-copy col-12 col-xl-6">
+      <section class="hero-copy col-12 col-xl-6" data-animate="fade-up">
         <p class="status-pill mb-0 d-inline-flex align-items-center fw-semibold">
           <span class="dot" aria-hidden="true"></span>
           Ofsted-registered · Outskirts of London
@@ -55,7 +55,7 @@
         </p>
 
         <div class="hero-actions d-flex flex-wrap gap-3">
-          <a href="#" class="btn hero-btn-primary rounded-pill">Make a referral</a>
+          <a href="#refer" class="btn hero-btn-primary rounded-pill">Make a referral</a>
           <a href="#" class="btn hero-btn-outline rounded-pill">See the homes</a>
         </div>
 
@@ -77,14 +77,14 @@
         </div>
       </section>
 
-      <section class="hero-visual col-12 col-xl-6" aria-label="Contemporary living room with London skyline">
+      <section class="hero-visual col-12 col-xl-6" data-animate="fade-up" style="transition-delay:0.15s" aria-label="Contemporary living room with London skyline">
         <img src="assets/img/home_living_01.jpg" alt="Bright modern apartment living room with city skyline view" />
       </section>
 
     </main>
 
     <!-- Handover / Referral form section -->
-    <section class="handover-section" id="refer" aria-labelledby="handover-heading">
+    <section class="handover-section" id="refer" aria-labelledby="handover-heading" data-animate="fade-up">
       <div class="handover-card row g-0">
 
         <div class="handover-left col-12 col-lg-5 d-flex flex-column justify-content-center">
@@ -127,7 +127,7 @@
       </div>
     </section>
 
-    <footer class="site-footer">
+    <footer class="site-footer" data-animate="fade-up">
       <hr class="footer-divider" />
 
       <div class="row g-4 g-lg-5 footer-grid">
@@ -175,5 +175,6 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/animation.js"></script>
 </body>
 </html>
