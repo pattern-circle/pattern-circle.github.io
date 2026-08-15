@@ -1,1 +1,359 @@
+:root {
+    --bg: #fefcf8;
+    --ink: #17463f;
+    --muted: #5b7872;
+    --pill-bg: #dff2f6;
+    --accent: #ff5a1f;
+    --shell-x: clamp(16px, 3.2vw, 58px);
+}
 
+body {
+    margin: 0;
+    background: radial-gradient(circle at 20% -15%, #fffdf7 0%, var(--bg) 48%, #fcfaf5 100%);
+    color: var(--ink);
+    font-family: "Open Sans", sans-serif;
+}
+
+.page-shell {
+    max-width: 1680px;
+    margin: 0 auto;
+    min-height: 100vh;
+    padding-top: 10px;
+    padding-left: var(--shell-x);
+    padding-right: var(--shell-x);
+    padding-bottom: 44px;
+}
+
+.site-header {
+    min-height: 86px;
+}
+
+.brand {
+    font-family: "Google Sans Flex", sans-serif;
+    font-size: clamp(34px, 2.6vw, 48px);
+    letter-spacing: -0.04em;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.brand-dark {
+    color: #184940;
+}
+
+.brand-accent {
+    color: var(--accent);
+}
+
+.site-navbar .navbar-toggler {
+    padding: 0;
+}
+
+.site-navbar .navbar-nav {
+    margin-bottom: 0;
+}
+
+.nav-list {
+    column-gap: clamp(18px, 2.2vw, 60px);
+}
+
+.site-navbar .nav-link {
+    font-size: clamp(16px, 1.6vw, 24px);
+    color: #355f58;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+}
+
+.site-navbar .nav-link:hover,
+.site-navbar .nav-link:focus {
+    color: #204a43;
+}
+
+.cta-btn {
+    background: var(--accent);
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: clamp(16px, 1.65vw, 16px);
+    font-weight: 700;
+    padding: clamp(12px, 1.3vw, 18px) clamp(20px, 2.7vw, 30px);
+    box-shadow: 0 12px 24px rgba(255, 90, 31, 0.3);
+}
+
+.cta-btn:hover,
+.cta-btn:focus {
+    background: #ff6b34;
+    color: #fff;
+}
+
+.hero-section {
+    margin-top: clamp(22px, 6vw, 96px);
+}
+
+.hero-copy {
+    max-width: 900px;
+    padding-bottom: clamp(0px, 2.6vw, 42px);
+}
+
+.status-pill {
+    gap: 14px;
+    padding: clamp(10px, 1.05vw, 16px) clamp(14px, 1.8vw, 28px);
+    border-radius: 999px;
+    background: #194840;
+    color: #ffffff;
+    font-size: clamp(14px, 1.3vw, 30px);
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
+.dot {
+    width: clamp(8px, 0.85vw, 16px);
+    height: clamp(8px, 0.85vw, 16px);
+    border-radius: 50%;
+    background: var(--accent);
+}
+
+h1 {
+    margin: clamp(18px, 2.6vw, 48px) 0 clamp(12px, 1vw, 18px);
+    line-height: 0.91;
+    letter-spacing: -0.05em;
+    font-weight: 600;
+    font-family: "Cal Sans", sans-serif;
+    letter-spacing: 3px;
+}
+
+.line-dark,
+.line-accent {
+    font-size: clamp(44px, 7.2vw, 148px);
+}
+
+.line-dark {
+    color: #184840;
+}
+
+.line-accent {
+    color: var(--accent);
+}
+
+.hero-subcopy {
+    max-width: 920px;
+    color: var(--muted);
+    font-size: clamp(22px, 1.42vw, 40px);
+    line-height: 1.45;
+    letter-spacing: -0.01em;
+}
+
+.hero-visual {
+    border-radius: clamp(22px, 2.6vw, 46px);
+    position: relative;
+    overflow: hidden;
+    height: clamp(350px, 60vw, 730px);
+    background: #e8e2d8;
+}
+
+.hero-visual img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.site-footer {
+    margin-top: clamp(52px, 8vw, 120px);
+    padding-bottom: clamp(20px, 4vw, 54px);
+}
+
+.footer-divider {
+    border: 0;
+    border-top: 1px solid #d9ddd9;
+    margin: 0 0 clamp(36px, 4.5vw, 66px);
+}
+
+.footer-grid {
+    align-items: start;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-brand {
+    display: inline-block;
+}
+
+.footer-text {
+    color: #5f7671;
+    font-size: clamp(18px, 1.35vw, 38px);
+    line-height: 1.45;
+    letter-spacing: -0.01em;
+}
+
+.footer-contact,
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(10px, 1.25vw, 22px);
+}
+
+.footer-contact li,
+.footer-links li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #244a44;
+    font-size: clamp(19px, 1.28vw, 36px);
+    letter-spacing: -0.01em;
+}
+
+.footer-contact i {
+    color: var(--accent);
+    font-size: 1em;
+    width: 1.15em;
+    text-align: center;
+    flex: 0 0 1.15em;
+}
+
+.footer-contact a,
+.footer-links a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer-contact a:hover,
+.footer-contact a:focus,
+.footer-links a:hover,
+.footer-links a:focus {
+    color: #1d3f39;
+}
+
+.footer-copyright {
+    margin-top: clamp(24px, 5vw, 96px);
+    color: #82938f;
+    font-size: clamp(18px, 1.32vw, 35px);
+    letter-spacing: -0.01em;
+}
+
+@media (max-width: 1399.98px) {
+    .nav-list {
+        column-gap: 24px;
+    }
+
+    .footer-text,
+    .footer-contact li,
+    .footer-links li,
+    .footer-copyright {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .page-shell {
+        padding-top: 16px;
+        padding-bottom: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .site-header {
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .brand {
+        font-size: 30px;
+    }
+
+    .site-navbar {
+        width: 100%;
+        order: 3;
+    }
+
+    .site-navbar .navbar-collapse {
+        margin-top: 10px;
+    }
+
+    .nav-list {
+        row-gap: 8px;
+        column-gap: 24px;
+    }
+
+    .site-navbar .nav-link {
+        font-size: 17px;
+    }
+
+    .cta-btn {
+        margin-left: auto;
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+
+    .hero-section {
+        margin-top: 22px;
+    }
+
+    .hero-copy {
+        padding-bottom: 0;
+    }
+
+    .status-pill {
+        font-size: 14px;
+        padding: 10px 14px;
+        gap: 9px;
+    }
+
+    .dot {
+        width: 8px;
+        height: 8px;
+    }
+
+    h1 {
+        margin: 18px 0 12px;
+        line-height: 0.95;
+    }
+
+    .line-dark,
+    .line-accent {
+        font-size: clamp(34px, 10.5vw, 62px);
+    }
+
+    .hero-subcopy {
+        font-size: 18px;
+    }
+
+    .hero-visual {
+        height: 350px;
+        border-radius: 22px;
+    }
+
+    .site-footer {
+        margin-top: 52px;
+    }
+
+    .footer-divider {
+        margin-bottom: 30px;
+    }
+
+    .footer-col {
+        gap: 12px;
+    }
+
+    .footer-text,
+    .footer-contact li,
+    .footer-links li,
+    .footer-copyright {
+        font-size: 18px;
+    }
+
+    .footer-contact,
+    .footer-links {
+        gap: 8px;
+    }
+
+    .footer-copyright {
+        margin-top: 28px;
+    }
+}
