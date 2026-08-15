@@ -142,6 +142,78 @@ h1 {
     letter-spacing: -0.01em;
 }
 
+.hero-actions {
+    margin-top: clamp(20px, 2.2vw, 40px);
+}
+
+.hero-btn-primary {
+    background: #184840;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: clamp(15px, 1.1vw, 20px);
+    font-weight: 600;
+    padding: clamp(12px, 1vw, 18px) clamp(22px, 2vw, 36px);
+    border: 2px solid #184840;
+    letter-spacing: -0.01em;
+}
+
+.hero-btn-primary:hover,
+.hero-btn-primary:focus {
+    background: #1f5a50;
+    border-color: #1f5a50;
+    color: #fff;
+}
+
+.hero-btn-outline {
+    background: transparent;
+    color: #184840;
+    font-family: "Open Sans", sans-serif;
+    font-size: clamp(15px, 1.1vw, 20px);
+    font-weight: 600;
+    padding: clamp(12px, 1vw, 18px) clamp(22px, 2vw, 36px);
+    border: 2px solid #184840;
+    letter-spacing: -0.01em;
+}
+
+.hero-btn-outline:hover,
+.hero-btn-outline:focus {
+    background: #184840;
+    color: #fff;
+}
+
+.hero-stats-divider {
+    border: 0;
+    border-top: 1px solid #d4dbd9;
+    margin: clamp(20px, 2.4vw, 42px) 0 clamp(16px, 2vw, 36px);
+    max-width: 560px;
+}
+
+.hero-stats {
+    gap: clamp(16px, 3.2vw, 56px);
+}
+
+.hero-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.hero-stat-value {
+    font-family: "Google Sans Flex", sans-serif;
+    font-size: clamp(28px, 3vw, 54px);
+    font-weight: 700;
+    color: #184840;
+    line-height: 1;
+    letter-spacing: -0.03em;
+}
+
+.hero-stat-label {
+    font-size: clamp(13px, 1vw, 18px);
+    color: var(--muted);
+    letter-spacing: -0.01em;
+    line-height: 1.3;
+}
+
 .hero-visual {
     border-radius: clamp(22px, 2.6vw, 46px);
     position: relative;
